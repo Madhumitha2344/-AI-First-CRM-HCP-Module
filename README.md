@@ -157,28 +157,6 @@ API Documentation
 | POST | `/summary/` | Generate AI visit summary |
 | GET | `/health` | API health check |
 
-Full interactive Swagger UI: **http://localhost:8000/docs**
-
-
-
-Environment Variables
-
-backend/.env
-
-env
-DATABASE_URL=mysql+pymysql://root:@localhost:3306/crm_hcp
-GROQ_API_KEY=gsk_your_groq_api_key_here
-SECRET_KEY=crmsecret123abc
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=30
-
-
-frontend/.env
-
-env
-REACT_APP_API_URL=http://localhost:8000
-
-
 
 Prerequisites
 
