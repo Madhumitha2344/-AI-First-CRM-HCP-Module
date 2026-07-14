@@ -47,54 +47,6 @@ Key Features
 Project Structure
 
 
-crm-hcp/
-├── backend/
-│   ├── app/
-│   │   ├── agent/
-│   │   │   ├── graph.py          # LangGraph agent — ReAct loop
-│   │   │   └── tools.py          # 5 LangGraph tools
-│   │   ├── routers/
-│   │   │   ├── chat.py           # POST /chat
-│   │   │   ├── hcp.py            # GET/POST /hcp
-│   │   │   ├── interaction.py    # GET/POST/PUT/DELETE /interaction
-│   │   │   ├── followup.py       # GET/POST /followup
-│   │   │   └── summary.py        # POST /summary
-│   │   ├── config.py             # Environment settings
-│   │   ├── database.py           # SQLAlchemy MySQL engine
-│   │   ├── models.py             # ORM table definitions
-│   │   └── schemas.py            # Pydantic request/response models
-│   ├── main.py                   # FastAPI app entry point
-│   ├── schema.sql                # MySQL schema with sample data
-│   ├── requirements.txt
-│   └── .env
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── Dashboard.js
-│   │   │   ├── LogInteraction.js
-│   │   │   ├── ChatInterface.js
-│   │   │   ├── InteractionHistory.js
-│   │   │   ├── EditInteraction.js
-│   │   │   └── HCPList.js
-│   │   ├── store/
-│   │   │   ├── index.js
-│   │   │   ├── interactionSlice.js
-│   │   │   ├── hcpSlice.js
-│   │   │   └── chatSlice.js
-│   │   ├── components/
-│   │   │   └── Layout.js
-│   │   ├── api/
-│   │   │   └── axios.js
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── public/index.html
-│   ├── package.json
-│   └── .env
-│
-├── setup_and_run.bat             # One-click Windows setup script
-└── README.md
-
 
 
 Architecture
